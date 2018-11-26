@@ -18,10 +18,10 @@ node {
                         echo "Build...."                              
                     '''
                     // use "publishBuildRecord" method to publish build record
-                    publishBuildRecord gitBranch: "mbranch", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"SUCCESS"
+                    publishBuildRecord gitBranch: "master", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"SUCCESS"
                 }
                 catch (Exception e) {
-                    publishBuildRecord gitBranch: "mbranch", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"FAIL"
+                    publishBuildRecord gitBranch: "master", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"FAIL"
                 }
             }
 
