@@ -14,7 +14,7 @@ node {
 
             stage('Build') {
                 try {
-                    sh '''                              
+                    bat '''                              
                         echo "Build...."                              
                     '''
                     // use "publishBuildRecord" method to publish build record
@@ -26,7 +26,7 @@ node {
             }
 
             stage('Upload Unit Test and Code Coverage') {
-                sh '''                              
+                bat '''                              
                         echo "Upload test results...."                              
                 '''
                 // use "publishTestResult" method to publish test result
@@ -41,7 +41,7 @@ node {
 
             stage('Deploy') {
                 try {
-                    sh '''                              
+                    bat '''                              
                         echo "Deploying...."                              
                     '''
                     // use "publishDeployRecord" method to publish test result
