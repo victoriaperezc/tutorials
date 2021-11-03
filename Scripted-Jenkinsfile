@@ -36,7 +36,7 @@ node {
 
             stage('Gate') {
                 // use "evaluateGate" method to leverage IBM Cloud DevOps gate
-                evaluateGate policy: 'FirstPolicy', forceDecision: 'true'
+                //evaluateGate policy: 'FirstPolicy', forceDecision: 'true'
             }
 
             stage('Deploy') {
