@@ -21,14 +21,14 @@ pipeline {
                 '''
             }
             // post build section to use "publishBuildRecord" method to publish build record
-            post {
-                success {
-                    publishBuildRecord gitBranch: "master", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"SUCCESS"
-                }
-                failure {
-                    publishBuildRecord gitBranch: "master", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"FAIL"
-                }
-            }
+            //post {
+              //  success {
+                //    publishBuildRecord gitBranch: "master", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"SUCCESS"
+                //}
+                //failure {
+                  //  publishBuildRecord gitBranch: "master", gitCommit: "123234345", gitRepo: "https://test-iam-1", result:"FAIL"
+               // }
+            //}
         }
 
         stage('Upload Unit Test and Code Coverage') {
