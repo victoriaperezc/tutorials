@@ -31,8 +31,8 @@ pipeline {
             // post build section to use "publishTestResult" method to publish test result
             post {
                 always {
-                    publishTestResult type:'unittest', fileLocation: './mocha_pass.json'
-                    publishTestResult type:'code', fileLocation: './istanbul_pass.json'
+                    publishTestResult type:'unittest', fileLocation: 'mocha_pass.json'
+                    publishTestResult type:'code', fileLocation: 'istanbul_pass.json'
                 }
             }
         }
